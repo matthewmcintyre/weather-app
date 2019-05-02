@@ -1,0 +1,26 @@
+focus items in no specific order
+
+1. Night / Day theme
+   - toggle or based on time
+
+2. Display 24 hour time depending on location
+
+3. Icons need to display for every weather case
+    - replace if/else with a switch
+    - consider other icons or modify some of josh baders icons for cases such as fog...
+
+4. In title "do i need an umbrella?" replace the question mark with an umbrella
+
+5. make it more obvious that the temperature value can be toggled
+
+6. change footer to be more formal
+
+7. mobile first scss rebuild
+
+8. make the background over the entire html rather than viewport
+
+9. loading icon for when project is fetching from api spinning umbrella ( in which case, forget no. 4 )
+
+10. change the api to open weather from the fcc one
+
+11. take it a step further and replace existing js with JQuery so I can add it to my CV #winning
