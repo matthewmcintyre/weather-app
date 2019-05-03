@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" >
 
-<head>
-  <meta charset="UTF-8">
-  <title>Weather App</title>
-  
-  
-  
-      <link rel="stylesheet" href="stylesheets/main.css">
-
-  
-</head>
-
-<body>
-
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-</head>
-<body class="bodyBackground">
-  <h1 class="heading">Do I need an Umbrella?<h1>
-      
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta
+        name="description"
+        content="Do I need an Umbrella right now?"
+    />
+  </head>
+
+  <body class="bodyBackground">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h1 class="heading">Do I need an Umbrella?</h1>
+        
     <div class="masterIcon">
-    <div id="sun-shower" class="icon sun-shower hidden">
-  <div class="cloud"></div>
-  <div class="sun">
-    <div class="rays"></div>
-  </div>
-  <div class="rain"></div>
-</div>
+      <div id="sun-shower" class="icon sun-shower hidden">
+        <div class="cloud"></div>
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+        <div class="rain"></div>
+      </div>
 
-<div id="thunder-storm" class="icon thunder-storm hidden">
-  <div class="cloud"></div>
-  <div class="lightning">
-    <div class="bolt"></div>
-    <div class="bolt"></div>
-  </div>
-</div>
+      <div id="thunder-storm" class="icon thunder-storm hidden">
+        <div class="cloud"></div>
+        <div class="lightning">
+          <div class="bolt"></div>
+          <div class="bolt"></div>
+        </div>
+      </div>
 
-<div id="cloudy" class="icon cloudy hidden">
-  <div class="cloud"></div>
-  <div class="cloud"></div>
-</div>
+      <div id="cloudy" class="icon cloudy hidden">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+      </div>
 
-<div id="flurries" class="icon flurries hidden">
-  <div class="cloud"></div>
-  <div class="snow">
-    <div class="flake"></div>
-    <div class="flake"></div>
-  </div>
-</div>
+      <div id="flurries" class="icon flurries hidden">
+        <div class="cloud"></div>
+        <div class="snow">
+          <div class="flake"></div>
+          <div class="flake"></div>
+        </div>
+      </div>
 
-<div id="sunny" class="icon sunny hidden">
-  <div class="sun">
-    <div class="rays"></div>
-  </div>
-</div>
+      <div id="sunny" class="icon sunny hidden">
+        <div class="sun">
+          <div class="rays"></div>
+        </div>
+      </div>
 
-<div id="rainy" class="icon rainy hidden">
-  <div class="cloud"></div>
-  <div class="rain"></div>
-</div>
-</div>
+      <div id="rainy" class="icon rainy hidden">
+        <div class="cloud"></div>
+        <div class="rain"></div>
+      </div>
+    </div>
 
     <div id="answer"></div> 
     <br>
     <div class="infoPane">
-  <div class="paneText" id="myLocation"></div>
-      
-      <div class="paneText"  id="myTemp"></div>
-      
-  <div class="paneText"  id="myCurrentWeather"></div> 
-      </div>
+      <div class="paneText" id="myLocation"></div>  
+      <div class="paneText"  id="myTemp"></div>  
+      <div class="paneText"  id="myCurrentWeather"></div> 
+    </div>
     <br>
+      
+  </body>
     
-</body>
-    
-    <footer>
-    <p><i>by me, icons by <a href="https://codepen.io/joshbader/pen/EjXgqr">Josh Bader</href></i></p>
-    </footer>
-  
-  
+  <footer>
+    <p><i>icons by <a href="https://codepen.io/joshbader/pen/EjXgqr">Josh Bader</href></i></p>
+  </footer>
 
-    <script  src="../src/app.js"></script>
-
-
-
-
-</body>
+  <script src="../src/app.js"></script>
 
 </html>
