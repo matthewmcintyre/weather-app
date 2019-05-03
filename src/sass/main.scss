@@ -1,20 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   box-sizing: border-box;
 }
-*,
-*::before,
-*:after {
-  box-sizing: inherit;
-}
 body {
   text-align: center;
-}
-.bodyBackground {
   background: linear-gradient(deepskyblue, lightyellow) fixed;
-  transition: 2s;
 }
-.heading {
-  font-size: 500%;
+h1 {
+  font-size: 50px;
   font-family: "Shadows Into Light", sans-serif;
   color: white;
 }
