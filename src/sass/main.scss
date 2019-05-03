@@ -1,81 +1,79 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *::before, *:after{
-  box-sizing:inherit;
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
 }
-body{
-  text-align:center;
+body {
+  text-align: center;
 }
-.bodyBackground{
-  background:linear-gradient(deepskyblue, lightyellow) fixed;
+.bodyBackground {
+  background: linear-gradient(deepskyblue, lightyellow) fixed;
   transition: 2s;
 }
-.heading{
-  font-size:500%;
-  font-family: 'Shadows Into Light', sans-serif;
-  color:white;
+.heading {
+  font-size: 500%;
+  font-family: "Shadows Into Light", sans-serif;
+  color: white;
 }
-.paneText{
-  width:20%;
-  display:inline-block;
-  font-size:24px;
-  font-family: 'Quicksand', sans-serif;
+.paneText {
+  width: 20%;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
 }
-#myTemp{
-  color:maroon;
+#myTemp {
+  color: maroon;
 }
-#answer{
-  font-size:290%;
-  color:navy;
-  font-family: 'Quicksand', sans-serif;
+#answer {
+  font-size: 290%;
+  color: navy;
+  font-family: "Quicksand", sans-serif;
   padding-bottom: 3%;
 }
-p{
-  font-size:35%;
-  font-family: 'Quicksand';
+p {
+  font-size: 35%;
+  font-family: "Quicksand";
 }
 
-  @media (max-width:800px) {
-    .heading{
-      font-size: 200%;
-      
-    }
-    
-    .paneText{
-      font-size:40%;
-      width:30%;
-    }
-    .icon{
-   margin-top:10%;
-    }
-    p{
-      font-size:10%;
-    }
-    .masterIcon{
-
-    }
-    #answer{
-      font-size:180%;
-    }
+@media (max-width: 800px) {
+  .heading {
+    font-size: 200%;
   }
 
-.hidden{
-  visibility:hidden;
+  .paneText {
+    font-size: 40%;
+    width: 30%;
+  }
+  .icon {
+    margin-top: 10%;
+  }
+  p {
+    font-size: 10%;
+  }
+  #answer {
+    font-size: 180%;
+  }
 }
-.masterIcon{
-  position:relative;
-  margin-left:auto;
-  margin-right:auto;
+
+.hidden {
+  visibility: hidden;
+}
+.masterIcon {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*All below icons were created by Josh Bader*/
 
 .icon {
   display: block;
-  font-size:80%;
-  padding-top:2%;
-  width:100%;
+  font-size: 80%;
+  padding-top: 2%;
+  width: 100%;
 }
 
 .cloud {
@@ -88,15 +86,12 @@ p{
   margin: -1.84375em;
   background: currentColor;
   border-radius: 50%;
-  box-shadow:
-    -2.1875em 0.6875em 0 -0.6875em,
-    2.0625em 0.9375em 0 -0.9375em,
-    0 0 0 0.375em #fff,
-    -2.1875em 0.6875em 0 -0.3125em #fff,
+  box-shadow: -2.1875em 0.6875em 0 -0.6875em, 2.0625em 0.9375em 0 -0.9375em,
+    0 0 0 0.375em #fff, -2.1875em 0.6875em 0 -0.3125em #fff,
     2.0625em 0.9375em 0 -0.5625em #fff;
 }
 .cloud:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: -0.5em;
@@ -109,17 +104,16 @@ p{
 .cloud:nth-child(2) {
   z-index: 0;
   background: #fff;
-  box-shadow:
-    -2.1875em 0.6875em 0 -0.6875em #fff,
-    2.0625em 0.9375em 0 -0.9375em #fff,
-    0 0 0 0.375em #fff,
-    -2.1875em 0.6875em 0 -0.3125em #fff,
-    2.0625em 0.9375em 0 -0.5625em #fff;
+  box-shadow: -2.1875em 0.6875em 0 -0.6875em #fff,
+    2.0625em 0.9375em 0 -0.9375em #fff, 0 0 0 0.375em #fff,
+    -2.1875em 0.6875em 0 -0.3125em #fff, 2.0625em 0.9375em 0 -0.5625em #fff;
   opacity: 0.3;
   transform: scale(0.5) translate(6em, -3em);
   animation: cloud 4s linear infinite;
 }
-.cloud:nth-child(2):after { background: #fff; }
+.cloud:nth-child(2):after {
+  background: #fff;
+}
 
 .sun {
   position: absolute;
@@ -147,7 +141,7 @@ p{
 }
 .rays:before,
 .rays:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0em;
   left: 0em;
@@ -181,7 +175,7 @@ p{
 }
 
 .rain:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -191,10 +185,9 @@ p{
   margin: -1em 0 0 -0.25em;
   background: #0cf;
   border-radius: 100% 0 60% 50% / 60% 0 100% 50%;
-  box-shadow:
-    0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
-    -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
-    -1.375em -0.125em 0 rgba(255,255,255,0.2);
+  box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2),
+    -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2),
+    -1.375em -0.125em 0 rgba(255, 255, 255, 0.2);
   transform: rotate(-28deg);
   animation: rain 3s linear infinite;
 }
@@ -218,7 +211,7 @@ p{
 }
 .bolt:before,
 .bolt:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -255,13 +248,12 @@ p{
 
 .flake:before,
 .flake:after {
-  content: '\2744';
+  content: "\2744";
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -1.025em 0 0 -1.0125em;
   color: #fff;
-  list-height: 1em;
   opacity: 0.2;
   animation: spin 8s linear infinite reverse;
 }
@@ -284,16 +276,21 @@ p{
   animation: spin 16s linear infinite reverse;
 }
 
-
-/* Animations */ 
+/* Animations */
 
 @keyframes spin {
-  100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes cloud {
-  0% { opacity: 0; }
-  50% { opacity: 0.7; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
   100% {
     opacity: 0;
     transform: scale(0.5) translate(-200%, -3em);
@@ -303,28 +300,24 @@ p{
 @keyframes rain {
   0% {
     background: #0cf;
-    box-shadow:
-      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
-      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+    box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2),
+      -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2),
       -1.375em -0.125em 0 #0cf;
   }
   25% {
-    box-shadow:
-      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
+    box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2),
       -0.875em 1.125em 0 -0.125em #0cf,
-      -1.375em -0.125em 0 rgba(255,255,255,0.2);
+      -1.375em -0.125em 0 rgba(255, 255, 255, 0.2);
   }
   50% {
-    background: rgba(255,255,255,0.3);
-    box-shadow:
-      0.625em 0.875em 0 -0.125em #0cf,
-      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
-      -1.375em -0.125em 0 rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0.625em 0.875em 0 -0.125em #0cf,
+      -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2),
+      -1.375em -0.125em 0 rgba(255, 255, 255, 0.2);
   }
   100% {
-    box-shadow:
-      0.625em 0.875em 0 -0.125em rgba(255,255,255,0.2),
-      -0.875em 1.125em 0 -0.125em rgba(255,255,255,0.2),
+    box-shadow: 0.625em 0.875em 0 -0.125em rgba(255, 255, 255, 0.2),
+      -0.875em 1.125em 0 -0.125em rgba(255, 255, 255, 0.2),
       -1.375em -0.125em 0 #0cf;
   }
 }
@@ -347,12 +340,9 @@ p{
   }
 }
 
-#cloudy{
-  color:auto;
+#cloudy {
+  color: auto;
 }
-#sunny{
-  color:yellow;
-}
-#flurries{
-  
+#sunny {
+  color: yellow;
 }
