@@ -1,17 +1,17 @@
-var weatherAPI = "https://fcc-weather-api.glitch.me/api/current?";
-var currentTemp = 0;
-var weatherCode = 0;
-var umbrella;
+let weatherAPI = "https://fcc-weather-api.glitch.me/api/current?";
+let currentTemp = 0;
+let weatherCode = 0;
+let umbrella;
 
-var myLocation = document.getElementById("myLocation");
-var temp = document.getElementById("myTemp");
-var answer = document.getElementById("answer");
-var myCurrentWeather = document.getElementById("myCurrentWeather");
+let myLocation = document.getElementById("myLocation");
+let temp = document.getElementById("myTemp");
+let answer = document.getElementById("answer");
+let myCurrentWeather = document.getElementById("myCurrentWeather");
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
 
     weatherAPI += "lat=" + lat + "&lon=" + lon;
 
