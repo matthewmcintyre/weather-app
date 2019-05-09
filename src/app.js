@@ -1,13 +1,51 @@
-let weatherAPI = "https://fcc-weather-api.glitch.me/api/current?";
+let oldWeatherAPI = "https://fcc-weather-api.glitch.me/api/current?";
+let ExampleWeatherAPI =
+  "api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}";
+let weatherAPI = "http://api.openweathermap.org/data/2.5/weather?";
+let APIKey = "&appid=3d73064f60f81b00761e2dda00f26d7b";
 let currentTemp = 0;
 let weatherCode = 0;
 let umbrella;
 
-let myLocation = document.getElementById("myLocation");
-let temp = document.getElementById("myTemp");
-let answer = document.getElementById("answer");
-let myCurrentWeather = document.getElementById("myCurrentWeather");
+//let myLocation = document.getElementById("myLocation");
+//let temp = document.getElementById("myTemp");
+//let answer = document.getElementById("answer");
+//let myCurrentWeather = document.getElementById("myCurrentWeather");
 
+let myLocation = $("#myLocation");
+let temp = $("#myTemp");
+let answer = $("#answer");
+let myCurrentWeather = $("#myCurrentWeather");
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(pos) {
+    let lat = "lat=" + pos.coords.latitude;
+    let lon = "lon=" + pos.coords.longitude;
+
+    $.ajax({
+      type: "POST",
+      url: weatherAPI + lat + "&" + lon + APIKey + "&units=metric",
+      dataType: "json",
+      success: function(weather) {
+        alert("it worked");
+        console.log(weather);
+        //set the location, temp and status
+        $("#myLocation").html(weather.name);
+        $("#myTemp").html(weather.main.temp);
+        $("#myCurrentWeather").html(weather.weather[0].main);
+      },
+      error: function(error) {
+        alert("Failed to retrieve data");
+        console.log(error);
+      }
+    });
+  });
+} else {
+  //display error message about no geolocation
+  //maybe a message to always remember umbrella anyways #lolamiright
+}
+
+/*
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
     let lat = position.coords.latitude;
@@ -33,6 +71,7 @@ if (navigator.geolocation) {
     });
   });
 }
+*/
 
 function toCelsius() {
   myTemp.setAttribute("onClick", "javascript: toFahreinheit();");
