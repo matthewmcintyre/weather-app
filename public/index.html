@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <meta
+        name="description"
+        content="Do I need an Umbrella?"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+
+  <body class="bodyBackground">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h1 class="heading">Do I need an Umbrella?</h1>
+
+    <div class="loader"></div>
+        
+    <div id="infoWrapper">
+      <div class="masterIcon">
+        <div id="sun-shower" class="icon sun-shower hidden">
+          <div class="cloud"></div>
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+          <div class="rain"></div>
+        </div>
+
+        <div id="thunder-storm" class="icon thunder-storm hidden">
+          <div class="cloud"></div>
+          <div class="lightning">
+            <div class="bolt"></div>
+            <div class="bolt"></div>
+          </div>
+        </div>
+
+        <div id="cloudy" class="icon cloudy hidden">
+          <div class="cloud"></div>
+          <div class="cloud"></div>
+        </div>
+
+        <div id="flurries" class="icon flurries hidden">
+          <div class="cloud"></div>
+          <div class="snow">
+            <div class="flake"></div>
+            <div class="flake"></div>
+          </div>
+        </div>
+
+        <div id="sunny" class="icon sunny hidden">
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+        </div>
+
+        <div id="rainy" class="icon rainy hidden">
+          <div class="cloud"></div>
+          <div class="rain"></div>
+        </div>
+      </div>
+
+      <div id="answer"></div> 
+      <div class="infoPane hidden">
+        <div class="paneText" id="myLocation"></div>  
+        <div class="paneText"  id="myTemp"></div>  
+        <div class="paneText"  id="myCurrentWeather"></div> 
+      </div>
+    </div>    
+  </body>
+    
+  <footer>
+    <p class="footer"><i>icons by <a href="https://codepen.io/joshbader/pen/EjXgqr">Josh Bader</href></i></p>
+  </footer>
+
+  <script src="../src/app.js"></script>
+
+</html>
