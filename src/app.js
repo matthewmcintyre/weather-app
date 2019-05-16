@@ -1,4 +1,4 @@
-let weatherAPI = "http://api.openweathermap.org/data/2.5/weather?";
+let weatherAPI = "https://api.openweathermap.org/data/2.5/weather?";
 let APIKey = "&appid=3d73064f60f81b00761e2dda00f26d7b";
 
 if (navigator.geolocation) {
